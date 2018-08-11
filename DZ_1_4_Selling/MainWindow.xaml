@@ -1,0 +1,23 @@
+﻿<Window x:Class="DZ_1_4_Selling.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DZ_1_4_Selling"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="725">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ComboBox Name="ListOfTables" Grid.Column="0" Grid.Row="0" Width="200" Height="40" SelectionChanged="ListOfTables_SelectionChanged"></ComboBox>
+        <Button Name="Connect" Grid.Column="0" Grid.Row="3" Width="150" Height="40" Grid.ColumnSpan="2" Click="Connect_Click">Соедениться с базой</Button>
+        <ListBox Name="BaseInfo" Grid.Column="1" Grid.Row="0" Width="450" Grid.RowSpan="2"></ListBox>
+    </Grid>
+</Window>
